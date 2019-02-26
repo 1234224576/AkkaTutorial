@@ -1,6 +1,6 @@
 package example.iot
 
-import akka.actor.{Actor, ActorLogging, Props, Terminated}
+import akka.actor.{Actor, ActorLogging, Props}
 
 object Device {
   def props(groupId: String, deviceId: String): Props = Props(new Device(groupId, deviceId))
